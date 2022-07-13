@@ -67,11 +67,11 @@ Tested complete PyChain ledger and user interface by running Streamlit applicati
 (3) Entered values for the sender, receiver, and amount, and then clicked the Add Block button. Did this several times to store several blocks in the ledger.
 (4) Verified the block contents and hashes in the Streamlit drop-down menu. Took a screenshot of the Streamlit application page, detailing a blockchain that consists of multiple blocks. See the following:
 
-* ![cumulative_return_plot_1](cumulative_return_plot_3.png) 
+* ![pychain](pychain.png) 
 
 (5) Tested the blockchain validation process by using the web interface. Took a screenshot of the Streamlit application page, which should indicate the validity of the blockchain. See the following:
 
-* ![cumulative_return_plot_1](cumulative_return_plot_3.png) 
+* ![pychain_2](pychain_2.png) 
 
 ---
 ## Contributors

@@ -93,15 +93,6 @@ class Block:
 
         nonce = str(self.nonce).encode()
         sha.update(nonce)
-        
-        sender = str(self.sender).encode()
-        sha.update(sender)
-        
-        receiver = str(self.receiver).encode()
-        sha.update(receiver)
-        
-        amount = float(self.amount).encode()
-        sha.update(amount)
 
         return sha.hexdigest()
 
@@ -195,10 +186,9 @@ if st.button("Add Block"):
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     new_block = Block(
-        data=input_data,
         creator_id=42,
-        prev_hash=prev_block_hash
-        record=Record.sender_input.receiver_input.amount_input
+        prev_hash=prev_block_hash,
+        record=Record(sender_input, receiver_input, amount_input)
     )
 
     pychain.add_block(new_block)
